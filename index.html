@@ -60,7 +60,7 @@
         <!-- Hero -->
         <section class="hero-section">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+            <button class="button hero-button" type="button" data-modal-open>Заказать услугу</button>
         </section>
         <!-- Featers -->
         <section class="page-section featers-section">
@@ -323,13 +323,25 @@
                     </ul>
                 </address>
                 <div class="socials">
-                    <h3 class="socials-title">Присоединяйтесь</h3>
+                    <h3 class="footer-title">Присоединяйтесь</h3>
                     <ul class="social-links-list">
                         <li class="social-link-item"><a class="solial-link instagram-icon" href=""></a></li>
                         <li class="social-link-item"><a class="solial-link twitter-icon" href=""></a></li>
                         <li class="social-link-item"><a class="solial-link facebook-icon" href=""></a></li>
                         <li class="social-link-item"><a class="solial-link linkedin-icon" href=""></a></li>
                     </ul>
+                </div>
+                <div class="subscribe-wrapper">
+                    <h3 class="footer-title">Подпишитесь на рассылку</h3>
+                    <form class="subscribe-form">
+                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
+                        <button class="button subscribe-button" type="submit">
+                            Подписаться
+                            <svg class="subscribe-btn-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-subscribeBtnIcon"></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -341,6 +353,32 @@
                     <use href="./images/sprite.svg#icon-close-button">
                 </svg>
             </button>
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="modal-form">
+                <div class="text-fields-group" role="form-group">
+                    <div class="form-field">
+                        <label class="field-label" for="name">Имя</label>
+                        <input class="text-field" type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label class="field-label" for="tel">Телефон</label>
+                        <input class="text-field" type="tel" name="tel" id="tel" required>
+                    </div>
+                    <div class="form-field">
+                        <label class="field-label" for="email">Почта</label>
+                        <input class="text-field" type="email" name="email" id="email">
+                    </div>
+                    <div class="form-field">
+                        <label class="field-label" for="comment">Коментарий</label>
+                        <textarea class="text-field comment-field" type="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    </div>
+                </div>
+                <div class="agreement-field">
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label class="agreement-label" for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-conditions">Условия договора</a></label>
+                </div>
+                <button class="button submit-button" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
