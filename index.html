@@ -334,7 +334,7 @@
                 <div class="subscribe-wrapper">
                     <h3 class="footer-title">Подпишитесь на рассылку</h3>
                     <form class="subscribe-form">
-                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
+                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail" required>
                         <button class="button subscribe-button" type="submit">
                             Подписаться
                             <svg class="subscribe-btn-icon" width="24" height="24">
@@ -359,14 +359,23 @@
                     <div class="form-field">
                         <label class="field-label" for="name">Имя</label>
                         <input class="text-field" type="text" name="name" id="name" required>
+                        <svg class="input-icon" width="12" height="12">
+                            <use href="./images/sprite.svg#icon-name-input"></use>
+                        </svg>
                     </div>
                     <div class="form-field">
                         <label class="field-label" for="tel">Телефон</label>
                         <input class="text-field" type="tel" name="tel" id="tel" required>
+                        <svg class="input-icon" width="13" height="13">
+                            <use href="./images/sprite.svg#icon-tel-input"></use>
+                        </svg>
                     </div>
                     <div class="form-field">
                         <label class="field-label" for="email">Почта</label>
                         <input class="text-field" type="email" name="email" id="email">
+                        <svg class="input-icon" width="15" height="12">
+                            <use href="./images/sprite.svg#icon-email-input"></use>
+                        </svg>
                     </div>
                     <div class="form-field">
                         <label class="field-label" for="comment">Коментарий</label>
@@ -374,8 +383,10 @@
                     </div>
                 </div>
                 <div class="agreement-field">
-                    <input type="checkbox" name="agreement" id="agreement">
-                    <label class="agreement-label" for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-conditions">Условия договора</a></label>
+                    <input class="agreement-field-checkbox" type="checkbox" name="agreement" id="agreement">
+                    <label class="agreement-label" for="agreement">
+                        Соглашаюсь с рассылкой и принимаю&nbsp<a href="" class="agreement-conditions">Условия договора</a>
+                    </label>
                 </div>
                 <button class="button submit-button" type="submit">Отправить</button>
             </form>
